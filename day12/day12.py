@@ -1,9 +1,9 @@
 import random
 # the purpose of this code is practicing scope
 def initialize_game():
+    """initializes game by setting up number to guess and difficulty, returns both"""
     print('Welcome to the number guessing game!')
-    numbers = list(range(1,101))
-    number = random.choice(numbers)
+    number = random.randint(1,100)
     difficulty = input("Choose difficulty. Type 'easy' or 'hard': ").lower()
     if difficulty == 'easy':
         return 10, number
